@@ -1,0 +1,17 @@
+td {
+    width: 50px;
+    height: 50px;
+    background-color: lightgrey;
+}
+body{
+    background-color: red;
+}
+
+
+.snake{
+    background-color: blue;
+}
+
+#apple{
+    background-color: black;
+}
