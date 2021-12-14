@@ -1,17 +1,62 @@
-td {
+#info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+#scoreboard, #highscoreboard{
+    flex-direction: row;
+}
+#scoreboard{
+    margin-left:20px;
+    margin-right: 20px;
+    text-align: center;
+}
+#highscoreboard{
+    margin-left:20px;
+    margin-right: 20px;
+    text-align: center;
+}
+#field{
+    display:flex;
+    justify-content: center;
+}
+#tablestyle{
+    border-spacing: 0;
+    border:4px solid black;
+ }
+#title{
+    text-align: center;
+}
+ table td{
+     padding:10px;
+     border:1px solid white
+ }
+ td {
     width: 50px;
     height: 50px;
-    background-color: lightgrey;
+    background: darkslategrey;
 }
+tr:nth-child(even) td:nth-child(odd), 
+tr:nth-child(odd) td:nth-child(even){
+    background: darkgray;
+}
+
 body{
     background-color: red;
 }
-
-
 .snake{
-    background-color: blue;
+    background-color: blue !important;
+    border:0;
 }
-
+#customboard{
+    display:flex;
+    flex-direction: column;
+}
 #apple{
     background-color: black;
+}
+
+.removed{
+    display:none;
 }

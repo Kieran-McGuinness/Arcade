@@ -5,185 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arcade</title>
-    <link rel="stylesheet" href="/course_work/project-6/arcade/style.css"/>
+    <link rel="stylesheet" href="/course_work/project-6/arcade/style.css">
 </head>
 <body>
-    <p>Snake</p>
-    <p>Score</p>
-    <p id="score">0</p>
+  
+        <p id= "title">Snake</p>
+        <div id="info">
+            <div id= "scoreboard">
+                <p>Score</p>
+                <p id="score">0</p>
+            </div>
+        <div id ="highscoreboard">
+            <p>High Score</p>
+            <p id="highscore">0</p>
+         </div>
+         <button id="playbtn" class="removed">Play</button>
+         <button id="resetbtn" class="removed" >Reset</button>
+    </div>
+<div id ="field">
     <table id="gameBoard">
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
 </table>
+<div id= "boardsetup">
+<div id="customboard">
+   <h3>Custom Board</h3>
+<label for="rows">Numbers of rows (1-50)</label>
+<input type="number" id="rows" min="1" max="50">
+<label for="columns">Numbers of columns (1-30)</label>
+<input type="number" id="columns" min="1" max="30">
+<label for="selector">Difficulty</label>
+<select id="selector">
+    <option value="700">Slow</option>
+    <option value="500">Faster</option>
+    <option value="300">Fast</option>
+    <option value="100">Insane</option>
+</select>
+<button id="submit">Submit</button>
+</div>
+<button id="quickplay">Quick Play</button>
+</div>
+</div>
 </body>
 <script type="text/javascript" src="/course_work/project-6/arcade/app.js"></script>
 </html>
