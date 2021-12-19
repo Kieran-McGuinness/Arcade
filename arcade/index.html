@@ -6,43 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arcade</title>
     <link rel="stylesheet" href="/course_work/project-6/arcade/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Russo+One&display=swap');
+        </style>
 </head>
 <body>
   
-        <p id= "title">Snake</p>
+        <h1 id= "title">Snake</h1>
         <div id="info">
             <div id= "scoreboard">
-                <p>Score</p>
+                <p>Current Score</p>
                 <p id="score">0</p>
             </div>
         <div id ="highscoreboard">
             <p>High Score</p>
             <p id="highscore">0</p>
          </div>
-         <button id="playbtn" class="removed">Play</button>
-         <button id="resetbtn" class="removed" >Reset</button>
+         <div id="gamebuttons" class="removed">
+         <button id="playbtn">Play</button>
+         <button id="resetbtn" >New Board</button>
+        </div>
     </div>
+    <div id="rules" class="removed">
+        <p><span id="applerule">Increases Score and Snake Size by 1</span></p>
+        <p><span id="sapplerule">Increases Score and Snake Size by 5</span></p>
+        <p><span id="spapplerule">Increases Snakes Speed</span></p>
+        <p><span id="slapplerule">Decreases Snakes Speed</span></p>
+</div>
 <div id ="field">
-    <table id="gameBoard">
-</table>
-<div id= "boardsetup">
-<div id="customboard">
-   <h3>Custom Board</h3>
-<label for="rows">Numbers of rows (1-50)</label>
-<input type="number" id="rows" min="1" max="50">
-<label for="columns">Numbers of columns (1-30)</label>
-<input type="number" id="columns" min="1" max="30">
-<label for="selector">Difficulty</label>
-<select id="selector">
-    <option value="700">Slow</option>
-    <option value="500">Faster</option>
-    <option value="300">Fast</option>
-    <option value="100">Insane</option>
-</select>
-<button id="submit">Submit</button>
-</div>
-<button id="quickplay">Quick Play</button>
-</div>
+        <table id="gameBoard">
+    </table>
+    <div id= "boardsetup">
+        <div id="customboard">
+            <button id="quickplay">Quick Play</button>
+            <h3>Custom Board</h3>
+            <label for="rows">Tiles per Row</label>
+            <input type="number" id="rows" min="1" max="50">
+            <label for="columns">Number of Rows</label>
+            <input type="number" id="columns" min="1" max="30">
+            <label for="selector">Difficulty</label>
+            <select id="selector">
+                <option value="700">Slow</option>
+                <option value="500">Faster</option>
+                <option value="300">Fast</option>
+                <option value="100">Insane</option>
+            </select>
+            <button id="submit">Submit</button>
+        </div>
+    </div>
 </div>
 </body>
 <script type="text/javascript" src="/course_work/project-6/arcade/app.js"></script>
